@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KopiSopi</title>
+    <meta name="description" content="Beli kopi spesialti Nusantara secara online. Segar, berkualitas, dan dikirim cepat." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner" aria-label="Navigasi utama">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <span aria-hidden="true">☕</span>
+          <span class="brand-text">KopiNusantara</span>
+        </a>
+        <nav class="top-nav" aria-label="Navigasi slide">
+           <!-- kontrol nav menggunakan label untuk menggeser radio (tanpa JS)  -->
+          <label for="s1" class="nav-link">Beranda</label>
+          <label for="s2" class="nav-link">Menu</label>
+          <label for="s3" class="nav-link">Keunggulan</label>
+          <label for="s4" class="nav-link">Pemesanan</label>
+        </nav>
+      </div>
+    </header>
+
+     <!-- Radio controllers (visually hidden)  -->
+    <input type="radio" name="slides" id="s1" class="sr-only" checked />
+    <input type="radio" name="slides" id="s2" class="sr-only" />
+    <input type="radio" name="slides" id="s3" class="sr-only" />
+    <input type="radio" name="slides" id="s4" class="sr-only" />
+
+    <main class="slider" role="main" aria-label="Konten utama">
+      <div class="viewport">
+        <div class="slides" aria-live="polite">
+           <!-- Slide 1: Hero  -->
+          <section class="slide slide-hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+              <div class="hero-copy">
+                <h1 id="hero-title" class="title text-balance">
+                  Kopi Spesialti Nusantara, Segar Dipanggang
+                </h1>
+                <p class="subtitle text-pretty">
+                  Nikmati cita rasa kopi terbaik dari Aceh hingga Papua.
+                  Pesan online, siap kirim hari ini.
+                </p>
+                <div class="cta">
+                  <label for="s2" class="btn btn-primary">Lihat Menu</label>
+                  <label for="s4" class="btn btn-outline">Pesan Sekarang</label>
+                </div>
+              </div>
+              <div class="hero-art" aria-hidden="true">
+                <div class="bean"></div>
+                <div class="cup"></div>
+              </div>
+            </div>
+          </section>
+
+           <!-- Slide 2: Menu  -->
+          <section class="slide slide-menu" aria-labelledby="menu-title">
+            <div class="container">
+              <h2 id="menu-title" class="section-title">Menu Pilihan</h2>
+              <p class="section-subtitle">Biji kopi pilihan disangrai harian</p>
+              <div class="grid products">
+                <article class="card" aria-label="Kopi Gayo">
+                  <header class="card-head">
+                    <h3 class="card-title">Gayo Aceh</h3>
+                    <span class="badge">Arabica</span>
+                  </header>
+                  <p class="card-desc">
+                    Cokelat gelap, caramel, dan sentuhan spice. Body medium.
+                  </p>
+                  <div class="card-foot">
+                    <span class="price">Rp 120.000</span>
+                    <label for="s4" class="btn btn-mini">Pesan</label>
+                  </div>
+                </article>
+
+                <article class="card" aria-label="Kopi Toraja">
+                  <header class="card-head">
+                    <h3 class="card-title">Toraja</h3>
+                    <span class="badge">Arabica</span>
+                  </header>
+                  <p class="card-desc">
+                    Herba, cacao nibs, acidity seimbang dengan aftertaste panjang.
+                  </p>
+                  <div class="card-foot">
+                    <span class="price">Rp 130.000</span>
+                    <label for="s4" class="btn btn-mini">Pesan</label>
+                  </div>
+                </article>
+
+                <article class="card" aria-label="Kopi Kintamani">
+                  <header class="card-head">
+                    <h3 class="card-title">Kintamani</h3>
+                    <span class="badge badge-alt">Washed</span>
+                  </header>
+                  <p class="card-desc">
+                    Citrus segar, floral, bersih. Cocok untuk pour-over.
+                  </p>
+                  <div class="card-foot">
+                    <span class="price">Rp 115.000</span>
+                    <label for="s4" class="btn btn-mini">Pesan</label>
+                  </div>
+                </article>
+
+                <article class="card" aria-label="Kopi Papua">
+                  <header class="card-head">
+                    <h3 class="card-title">Papua</h3>
+                    <span class="badge">Arabica</span>
+                  </header>
+                  <p class="card-desc">
+                    Nutty, honey, acidity ringan. Nyaman untuk harian.
+                  </p>
+                  <div class="card-foot">
+                    <span class="price">Rp 110.000</span>
+                    <label for="s4" class="btn btn-mini">Pesan</label>
+                  </div>
+                </article>
+              </div>
+
+              <div class="section-cta">
+                <label for="s4" class="btn btn-primary">Lanjutkan Pemesanan</label>
+              </div>
+            </div>
+          </section>
+
+           <!-- Slide 3: Keunggulan  -->
+          <section class="slide slide-features" aria-labelledby="feat-title">
+            <div class="container">
+              <h2 id="feat-title" class="section-title">Mengapa Pilih Kami</h2>
+              <div class="grid features">
+                <div class="feature">
+                  <div class="feature-icon" aria-hidden="true">⌛</div>
+                  <h3 class="feature-title">Sangrai Harian</h3>
+                  <p class="feature-desc">
+                    Kami memanggang biji kopi setiap hari agar selalu segar saat Anda pesan.
+                  </p>
+                </div>
+                <div class="feature">
+                  <div class="feature-icon" aria-hidden="true">🌱</div>
+                  <h3 class="feature-title">Sumber Berkelanjutan</h3>
+                  <p class="feature-desc">
+                    Bekerja langsung dengan petani lokal untuk kualitas dan keberlanjutan.
+                  </p>
+                </div>
+                <div class="feature">
+                  <div class="feature-icon" aria-hidden="true">⚡</div>
+                  <h3 class="feature-title">Kirim Cepat</h3>
+                  <p class="feature-desc">
+                    Pesanan sebelum jam 15.00 diproses di hari yang sama.
+                  </p>
+                </div>
+              </div>
+              <div class="section-cta">
+                <label for="s2" class="btn btn-outline">Lihat Menu</label>
+                <label for="s4" class="btn btn-primary">Pesan Sekarang</label>
+              </div>
+            </div>
+          </section>
+
+           <!-- Slide 4: Pemesanan  -->
+          <section class="slide slide-order" aria-labelledby="order-title">
+            <div class="container">
+              <h2 id="order-title" class="section-title">Form Pemesanan</h2>
+              <form class="order-form" method="get" action="#">
+                <div class="field">
+                  <label for="produk">Produk</label>
+                  <select id="produk" name="produk" required>
+                    <option value="" disabled selected>Pilih jenis kopi</option>
+                    <option value="gayo-aceh">Gayo Aceh</option>
+                    <option value="toraja">Toraja</option>
+                    <option value="kintamani">Kintamani</option>
+                    <option value="papua">Papua</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="gramasi">Gramasi</label>
+                  <select id="gramasi" name="gramasi" required>
+                    <option value="200">200 g</option>
+                    <option value="500">500 g</option>
+                    <option value="1000">1 kg</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="metode">Metode Seduh</label>
+                  <select id="metode" name="metode" required>
+                    <option value="whole">Biji Utuh</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="v60">V60 / Pour Over</option>
+                    <option value="mokapot">Moka Pot</option>
+                    <option value="tubruk">Tubruk</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="nama">Nama</label>
+                  <input id="nama" name="nama" type="text" placeholder="Nama lengkap" required />
+                </div>
+
+                <div class="field">
+                  <label for="hp">No. HP</label>
+                  <input id="hp" name="hp" type="tel" inputmode="tel" placeholder="08xxxxxxxxxx" required />
+                </div>
+
+                <div class="field">
+                  <label for="alamat">Alamat</label>
+                  <textarea id="alamat" name="alamat" rows="3" placeholder="Alamat lengkap untuk pengiriman" required></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Kirim Pemesanan</button>
+                  <label for="s2" class="btn btn-outline">Kembali ke Menu</label>
+                </div>
+
+                <p class="form-note">
+                  Catatan: Ini contoh statis. Untuk pembayaran dan pengiriman nyata, integrasi dapat ditambahkan sesuai kebutuhan.
+                </p>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+
+       Bullets 
+      <div class="bullets" role="tablist" aria-label="Pilih slide">
+        <label for="s1" class="dot" role="tab" aria-controls="hero-title" aria-label="Beranda"></label>
+        <label for="s2" class="dot" role="tab" aria-controls="menu-title" aria-label="Menu"></label>
+        <label for="s3" class="dot" role="tab" aria-controls="feat-title" aria-label="Keunggulan"></label>
+        <label for="s4" class="dot" role="tab" aria-controls="order-title" aria-label="Pemesanan"></label>
+      </div>
+
+       <!-- Prev / Next  -->
+      <div class="arrows" aria-hidden="true">
+        <div class="prev">
+          <label for="s1"></label>
+          <label for="s2"></label>
+          <label for="s3"></label>
+          <label for="s4"></label>
+        </div>
+        <div class="next">
+          <label for="s1"></label>
+          <label for="s2"></label>
+          <label for="s3"></label>
+          <label for="s4"></label>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© 2025 KopiNusantara. Semua hak cipta dilindungi.</p>
+        <p class="muted">Dirancang dengan rasa dan cinta kopi.</p>
+      </div>
+    </footer>
+  </body>
+</html>
